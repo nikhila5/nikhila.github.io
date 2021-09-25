@@ -1,0 +1,14 @@
+import csv
+header=['name','ATC-4','ATC-8','ATC-12','ATC-16','ATC-20','ATC-24']
+data=[
+    ['Nikhila',200,100,350,100,450,110],
+    ['Akhila',410,125,235,142,51,100],
+    ['Pranavi',150,124,136,124,84,192],
+    ['Shreyan',145,122,21,56,154,96],
+    ['Sreedhar',124,120,53,64,185,21]
+]
+
+with open('atc.csv','w',encoding='UTF8',newline=' ')as f:
+    writer=csv.writer(f)
+    writer.writerow(header)
+    writer.writerows(data)
